@@ -1,0 +1,276 @@
+ETP Screen List	
+	
+--Configure--	
+110	Setup
+130	Help
+140	Print
+283	Login Status										X	
+299	ETP System Version Information						X
+904	BMS
+9999	Exit
+
+--System Management--	
+1001	Common Management								X
+1011	Register Trader (Bursa)							X
+1013	Manage password									X
+1014	Register Branch									X
+1015	Update User Information							X
+1022	Screen Assignment (Bursa)						X
+1081	System Connection Status						X
+1082	System Connection Status (Detail)				X
+1084	Trader Address Book								X
+1085	Deleted Trader									X
+1086	Trader Change History							X
+1087	FIX Parameter Setting							X
+1089	FIX Change History								X
+1092	Order Response Time Check						X
+1611	Trade Task Assignment Entry (Bursa)				X
+	
+--Admin Management--	
+	Group / User Management	
+2000	Group Management								X
+2001	User Management									X
+	Copy User Profile
+2002	Copy Screen										X
+2003	Copy User Config								X
+2004	New User Config									X
+	Group  / User Audit Trail	
+2061	Audit Trail: User								X
+2062	Audit Trail: User Login							X
+2064	Audit Trail: Group								X
+2065	Audit Trail: Group Screen						X
+2067	Audit Trail: New User Config					X
+	Alert Audit Trail	
+2071	Audit Trail: Alert Status						X
+2072	Audit Trail: Alert Reason Type					X
+	Alert Management	
+2010	Alert Consultation and Details					X
+2011	Reason Type Management							X
+2012	Summary of Detected Alert						X
+2013	Alert Details									X
+2014	Alert on Alerts									X
+2015	Alert on Alerts - Temp2							X
+	
+--Parameter Management--	
+	Parameter Consultation	
+2020	Parameter Consultation - Default				X
+2021	Parameter Consultation - Admin					X
+2022	Parameter Consultation - Temporary				X
+2025	Parameter Consultation - Temporary2				X
+2120	Parameter Consultation - Band Default			X
+2121	Parameter Consultation - Band Admin				X
+2122	Parameter Consultation - Band Temporary			X
+2125	Parameter Consultation - Band Temporary2		X
+	Parameter Management	
+2023	Parameter Management - Admin					X
+2024	Parameter Management - Temporary				X
+2026	Parameter Management - Temporary2				X
+2123	Parameter Management - Band Admin				X
+2124	Parameter Management - Band Temporary			X
+2126	Parameter Management - Band Temporary2			X
+	
+--Market / Member Analysis--	
+	Market Analysis
+2030	Market Analysis									X
+2031	Market Analysis Chart1							X
+2032	Order List										X
+2033	NCBO Analysis									X
+2041	Market Analysis MTM Chart						X
+2042	Market Analysis - MTM							X
+	Member Analysis
+2034	Member Analysis - Mbr vs Acc					X
+2035	Member Analysis - Mbr vs Ins					X
+2036	Member Analysis - Acc vs Acc					X
+2037	Member Analysis - Acc vs Ins					X
+2038	Member Analysis - Mbr vs Trd					X
+2040	Member Analysis - Trd vs Ins					X
+	
+--Market Information--	
+2051	Master Information								X
+	Annoucement	
+211	Annoucement List									X
+212	Annoucement Details									X
+213	Annoucement Entry									X
+	Order Matching	
+1109	Market Session Time								X
+	Single Price Summary	
+1300	Today Summary 									X
+1301	Daily Summary by Date  							X
+1302	Daily Summary by Stock							X
+	Turnover	
+1303	Turnover List									X
+1304	Benchmark Turnover List							X
+	Chart & Graph	
+1305	Daily Securities Turnover						X
+1306	Daily Top 10 Stocks								X
+1307	Daily Stock Movement							X
+	Bond Price Index	
+1500	BPI Inquiry on Date Basis						X
+1501	BPI Inquiry on Time Basis						X
+	Market Management	
+1510	RENTAS Report Inquiry							X
+1511	RENTAS Reconciliation Summary Inquiry			X
+1512	RENTAS Inconsistency Inquiry					X
+1601	Member Information Inquiry						X
+1613	Branch Suspension Entry							X
+1614	Trader Suspension Entry							X
+	Market Operation	
+1550	Market Parameter Entry							X
+1555	Calendar Entry									X
+1560	Market Session Entry							X
+1561	Market Session Inquiry							X
+1565	MGS Future Basket Entry							X
+1566	MGS Future Settlement Price Entry				X
+1570	BPI Basket Entry								X
+1575	Denomination Entry								X
+1580	Advertisement Spread Entry						X
+1586	Stock Suspension Approval Entry					X
+1587	Instrument Assignment Entry						X
+1588	Matching Tradability Value Data Entry			X
+1589	Fee Information Entry							X
+1590	Instrument Public / Private Entry				X
+1591	Ticker Message Entry							X
+	Member Operation	
+1600	Member Information Entry						X
+1601	Member Information Inquiry						X
+1602	Member Suspension Entry							X
+1603	Member Suspension Approval Entry				X
+1604	Task Assignment Entry							X
+1605	Member Task Assignment Entry					X
+1606	Member Task Suspension Entry            		X
+	Primary Info	
+1630	Band Information								X
+1631	Facility Information							X
+1632	Stock General Information						X
+1633	Stock Rating / Coupon Information				X
+1634	Stock Detail Information						X
+1640	Outstanding Amount								X
+1641	Auction Calendar								X
+1642	MGS Indicative Price							X
+1701	Stock Information History						X
+	Yield Curve	
+1650	Benchmark Band Yield Curve						X
+1651	Benchmark Stock Yield Curve						X
+1652	Instrument Yield Curve							X
+	Calculation	
+1660	CashFlow										X
+1661	Bond Calculator									X
+
+--Advertisement	--
+	Benchmark Indicative Quotes						
+1400	Benchmark Indicative Entry						X						
+1401	Benchmark Indicative Inquiry					X
+1402	Benchmark Indicative Administration				X
+1403	Best Benchmark Indicative Inquiry				X
+
+	MGS Futures indicative Quotes	
+1400	Benchmark Indicative Entry						X
+1401	Benchmark Indicative Inquiry					X
+1402	Benchmark Indicative Administration				X
+1403	Best Benchmark Indicative Inquiry				X
+>>>>>>> .r2975
+	MGS Futures indicative Quotes
+1410	MGS Futures Indicative Entry					0		~~~~~~~~ Kena Cari ~~~~~~~~~~
+1411	MGS Futures Indicative Inquiry					X
+1412	MGS Futures Indicative Administration			X
+	Price Advertisement (OBS/WI)	
+1420	Advertisement Entry (OBS/WI)					X
+1421	Advertisement Inquiry (OBS/WI)					X
+1422	Advertisement Administration (OBS/WI)			X
+1423	Best Advertisement Inquiry (OBS/WI)				X
+	Price Advertisement (Repo/SBBA)	
+1430	Advertisement Entry (Repo/SBBA)					X
+1431	Advertisement Inquiry (Repo/SBBA)				X
+1432	Advertisement Administration (Repo/SBBA)		X
+1433	Best Advertisement Inquiry (Repo/SBBA)			X
+	Price Advertisement (SBL)	
+1440	Advertisement Entry (SBL)						X
+1441	Advertisement Inquiry (SBL)						X
+1442	Advertisement Administration (SBL)				X
+1443	Best Advertisement Inquiry (SBL)				X
+	
+--Transaction--
+1310	Transaction List 								/
+1311	Adjustment of Match								X
+1312	Adjustment of Negotiation (OBS/WI)				X
+1313	Adjustment of Negotiation (Repo/SBBA)			X
+1314	Adjustment of Report (OBS/WI)					X
+1315	Adjustment of Report (Repo/SBBA)				X
+1316	Adjustment of Report (SBL)						X
+1317	Adjustment of Report (Re-allotment)				X
+1320	Band Trading Without Stock Assignment			X
+1321	Trade Detail of Match							X
+1322	Trade Detail of Negotiation (OBS/WI)			X
+1323	Trade Detail of Negotiation (Repo/SBBA)			X
+1324	Trade Detail of Report (OBS/WI)					X
+1325	Trade Detail of Report (Repo/SBBA)				X
+1326	Trade Detail of Report (SBL)					X
+1327	Trade Detail of Report (Re-allotment)			X
+1330	Transaction List for Admin						X
+1331	Adjustment of Match for BM						X
+1334	Exception Handling of Report (OBS/WI)			/
+1335	Exception Handling of Report (Repo/SBBA			X
+1336	Exception Handling of Report (SBL)				X
+1337	Exception Handling of Report (Re-allotment)		X
+1341	Trade Detail of Match (OBS/WI)					X
+1344	Adjustment Confirm of Report (OBS/WI)			X	
+1345	Adjustment Confirm of Report (Repo/SBBA)		X
+1346	Adjustment Confirm of Report (SBL)				X
+1347	Adjustment Confirm of Report (Re-allot)			X
+1350	Adjustment List									X
+1352	Trade Detail of Nego (OBS/WI)					X
+1353	Trade Detail of Nego (Repo/SBBA)				X
+1361	Trade Amendment History							X
+1362	Trade Amendment History for Admin				X
+1380	Market Summary for Admin						X
+1381	Market Summary Details for Admin				X
+1398	Request & Response List for BM					X
+1399	Request & Response List							X
+1520	Regulated Short Selling Entry					X
+1521	Regulated Short selling Inquiry					X
+1615	Client Informarion Entry						X
+1670	Transaction Summary								X
+1680	Fee List for Admin								X
+1682	Fee List										X
+	
+--Reporting	--
+1200	Reporting Entry by Initiator (OBS/WI)			X
+1203	Reporting List (OBS/WI)							X
+1210	Reporting Entry by Initiator (Repo/SBBA)		X
+1213	Reporting List (Repo/SBBA)						X
+1220	Reporting Entry by Initiator (SBL)				X
+1223	Reporting List (SBL)							X
+1230	Reporting Entry by Initiator (Re-allotment)		X
+1233	Reporting List (Re-allotment)					X
+1250	Reporting Entry by BM (OBS/WI)					X
+1256	Reporting List for Admin (OBS/WI)				X
+1260	Reporting Entry by BM (Repo/SBBA)				X
+1266	Reporting List for Admin (Repo/SBBA)			X
+1270	Reporting Entry by BM (SBL)						X
+1276	Reporting List for Admin (SBL)					X
+1280	Reporting Entry by BM (Re-allotment)			X
+1286	Reporting List for Admin (Re-allotment)			X
+	Accept / Reject by BM	
+1252	Accept / Reject By BM (OBS/WI)					X
+1262	Accept / Reject By BM (Repo/SBBA)				X
+1272	Accept / Reject By BM (SBL)						X
+1282	Accept / Reject By BM (Re-allotment)			X
+	Amend / Cancel by Initiator	
+1201	Amend / Cancel (OBS/WI)							X
+1211	Amend / Cancel (Repo/SBBL)						X
+1221	Amend / Cancel (SBL)							X
+1231	Amend / Cancel (Re-allotment)					X
+	Accept / Reject by Counterparty	
+1202	Accept / Reject (OBS/WI)						X
+1212	Accept / Reject (Repo/SBBL)						X
+1222	Accept / Reject (SBL)							X
+1232	Accept / Reject (Re-allotment)					X
+	Trade Reporting Transaction Trace	
+1204	Reporting Trace (OBS/WI)						X
+1205	Reporting Detail (OBS/WI)						X
+1214	Reporting Trace (Repo/SBBA)						X
+1215	Reporting Detail (Repo/SBBA)					X
+1224	Reporting Trace (SBL)							X
+1225	Reporting Detail (SBL)							X
+1234	Reporting Trace (Re-allotment)					X
+1235	Reporting Detail (Re-allotment)					X

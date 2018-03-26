@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators>
+    <excludes>
+        <pattern>*.pop</pattern>
+        <pattern>*/common/login.*</pattern>
+        <pattern>*/common/welcome.*</pattern>
+        <pattern>*/edc/logoff.*</pattern>
+    </excludes>
+    <decorator name="main" page="/WEB-INF/jsp/decorator/layout.jsp">
+        <pattern>*.sdm</pattern>
+    </decorator>
+</decorators>

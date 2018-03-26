@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/mvc 
+    http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/tx 
+    http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+ 
+ 	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource" p:basenames="MessagesBundle"/>
+ 	
+	<context:component-scan base-package="com.sdm.edc.service com.sdm.edc.controller" />
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="102400"/>
+	</bean>
+ 
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<mvc:annotation-driven />
+	<mvc:resources mapping="/resources/**" location="/resources/" />	
+	
+	<bean id="exceptionResolver" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="MaxUploadSizeExceededException">       
+                    uploaderror
+                </prop>
+                <!-- add in exception resolver for session expire. Even we have interceptor, but it is not enough. This is because user use "SessionAttribute" annotation, it will run early then interceptor and causing noisy error come out. -->
+                <prop key="HttpSessionRequiredException">       
+                    redirect:/common/login.etp?err=s1
+                </prop>
+                <!-- user try to direct access without login -->
+                <prop key="HttpRequestMethodNotSupportedException">
+                	redirect:/common/login.etp?err=s2
+                </prop>
+            </props>
+        </property>
+    </bean>
+	
+</beans>
